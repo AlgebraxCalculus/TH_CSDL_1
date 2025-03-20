@@ -1,3 +1,7 @@
+/* ======================== */
+/* General Styles           */
+/* ======================== */
+
 .App {
   text-align: center;
 }
@@ -35,4 +39,83 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* ======================== */
+/* Header Styles            */
+/* ======================== */
+
+/* Đảm bảo độ ưu tiên cao hơn */
+.navbar {
+  background-color: white !important; /* Đảm bảo màu nền trắng */
+  border-bottom: 3px solid blue !important; /* Thêm viền dưới */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Tạo hiệu ứng đổ bóng */
+}
+
+/* Chỉnh sửa màu chữ của tiêu đề */
+.navbar-brand {
+  font-size: 40px !important;
+  background: linear-gradient(to right, #007bff, #00c6ff) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  font-weight: bold !important;
+  text-align: center;
+}
+
+/* Chỉnh màu chữ của navbar */
+.navbar-nav .nav-link {
+  color: #007bff !important;
+  font-size: 18px !important;
+  font-weight: bold !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #0056b3 !important;
+}
+
+/* Đảm bảo không bị Bootstrap ghi đè */
+.navbar-toggler {
+  border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Định dạng dropdown menu */
+/* Dropdown Menu - Nền trắng */
+.navbar-nav .dropdown-menu {
+  background-color: white !important;
+  border: 1px solid #007bff !important;
+}
+
+/* Dropdown Item - Chữ màu đen */
+.navbar-nav .dropdown-item {
+  color: black !important; /* Chữ màu đen trên nền trắng */
+  font-weight: bold;
+}
+
+/* Hover Effect - Khi di chuột vào */
+.navbar-nav .dropdown-item:hover {
+  background-color: #007bff !important; /* Nền xanh khi hover */
+  color: white !important; /* Chữ trắng khi hover */
+}
+
+
+/* ======================== */
+/* Global Typography        */
+/* ======================== */
+
+h2 {
+  text-align: center;
+  color: #007bff !important;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* Nếu vẫn bị lỗi, thử nhắm trực tiếp vào phần tử Navbar */
+.navbar.navbar-dark {
+  background-color: white !important;
+}
+
+/* Đảm bảo không bị Bootstrap ghi đè */
+.navbar-collapse {
+  background-color: transparent !important;
 }
